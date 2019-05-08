@@ -1,0 +1,79 @@
+.font {
+  font-family: "Share Tech Mono", sans-serif
+}
+
+.img {
+  transform: scale(.75);
+
+}
+
+.imgB:hover {
+  transform: scale(2)
+}
+
+profile{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue; 
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  div.scrollmenu button {
+    background-color: purple;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  div.scrollmenu button:hover {
+    background-color: #777;
+  } 
+
+  .goRight{
+    letter-spacing: .5em;
+    font-size: 30px;
+  }
+
+  .withMargin{
+    height: 33%;
+  }
+
+  .btn{
+    margin: 10px;
+  }
+
+  .close{
+    margin: .5px;
+  }
+
+  .profileBackground{
+    background-color: white;
+    padding: 50px;
+    margin-top: 15px;
+    border: 10px double grey;
+  }
+
+  .col-b{
+    margin-top: 15px;
+  }
+
+  b{
+    text-align: center;
+  }
+
+  .clr{
+    color: white;
+  }
+  

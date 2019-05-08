@@ -1,0 +1,157 @@
+  .colMax{
+    width: 33%;
+  }
+
+  .w100{
+    width: 100%;
+  }
+  
+  .headerBackground {
+     /* background-image: url('../headerImage.png');*/
+      height: 150px;
+      margin-bottom: 35px;
+  }
+  
+  .dot {
+    height: 25px;
+    width: 25px;
+    border: solid gray 1px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1%;
+  }
+
+
+
+  .pokeHeader{
+      height: 200px;
+      margin-top: 50px;
+      }
+  
+  .poke {
+      height: 15%;
+      margin: 10px 50px
+  }
+
+  h1 {
+      text-align: center;
+      font-family: 'Share Tech Mono', sans-serif;
+      font-weight: bold;
+      font-size: 3px;
+      color: white;
+      padding-top: 20px;
+  }
+
+  
+  .dark{
+    border: 2px solid maroon;
+    height: 150px;
+  }
+  
+  /* Poké Styles */
+  .pokeball_left {
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin-top: 90px;
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: inset -10px 10px 0 10px #ccc;
+      animation: fall 1s ease-out,
+                 shake_left 3s cubic-bezier(.36,.07,.19,.97) 1;
+    }
+    .pokeball_right {
+      position: relative;
+      float: right;
+      width: 85px;
+      height: 85px;
+      margin: 0 auto;
+
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: inset -10px 10px 0 10px #ccc;
+      animation: roll 1s ease-in,
+                 shake_left 3s cubic-bezier(.36,.07,.19,.97) 1;
+    }
+    .pokeball::before,
+    .pokeball::after {
+      content:"";
+      position: absolute;
+      display: flex;
+    }
+    .pokeball::before {
+      background-color: #b1bfd8;
+  background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);   
+      width: 100%;
+      height: 50%;
+    }
+    .pokeball::after {
+      top: calc(50% - 10px);
+      width: 100%;
+      height: 20px;
+      background: #000;
+    }
+    .pokeball__button {
+      position: absolute;
+      top: calc(50% - 15px);
+      left: calc(50% - 15px);
+      width: 30%;
+      height: 30%;
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);  border: 5px solid #fff;
+      border-radius: 50%;
+      z-index: 10;
+      box-shadow: 0 0 0 10px black;
+      animation: blink .5s alternate 7;
+    }
+    /* Animation */
+    @keyframes blink {
+      from { background: #eee;}
+      to { background: red; }
+    }
+    
+    @keyframes shake_left {
+      0 { transform: translate(0, 0) rotate(0);}
+      20% { transform: translate(100px, -100px) rotate(20deg); }
+      30% { transform: translate(150px, 0) rotate(80deg); }
+      40% { transform: translate(200px, -100px) rotate(140deg); }
+      50% { transform: translate(300px, 0) rotate(200deg); }
+      60% { transform: translate(400px, -200px) rotate(360deg); }
+      70% { transform: translate(200px, -100px) rotate(-360deg); }
+      80% { transform: translate(100px, 0px) rotate(-360deg); }
+      90% { transform: translate(50px, -100px) rotate(-180deg); }    
+      100% { transform: translate(0px, 0px) rotate(-90deg); }
+    }
+    
+    @keyframes shake_right {
+      0 { transform: translate(0, 0) rotate(0);}
+      20% { transform: translate(-100px, -100px) rotate(-20deg); }
+      30% { transform: translate(-150px, 0) rotate(-80deg); }
+      40% { transform: translate(-200px, -100px) rotate(-140deg); }
+      50% { transform: translate(-300px, 0) rotate(-200deg); }
+      60% { transform: translate(-400px, -200px) rotate(-360deg); }
+      70% { transform: translate(-200px, -100px) rotate(360deg); }
+      80% { transform: translate(-100px, 0px) rotate(360deg); }
+      90% { transform: translate(-50px, -100px) rotate(180deg); }    
+      100% { transform: translate(0px, 0px) rotate(90deg); }
+  
+  
+    }
+  
+    @keyframes fall {
+    0% { top: 0px }
+    60% { top: 0 }
+    80% { top: -20px }
+    100% { top: 0 }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .pokeball {
+      visibility:hidden;
+    }
+  }

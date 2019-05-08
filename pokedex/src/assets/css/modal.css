@@ -1,0 +1,39 @@
+.modal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.danger {
+  background-color: #8a0000;
+}
+
+.profile{
+    display: inline-block;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid lightblue; 
+    background-color: white; 
+    color: black;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 15px;
+    font-family: "Share Tech Mono"
+  }
+
+
+
+  .col-12{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .edit{
+    text-align: center;
+    letter-spacing: .5px;
+  }
+
+  .imgModal {
+    position : relative;
+  }
