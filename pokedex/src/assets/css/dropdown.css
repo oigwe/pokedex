@@ -1,8 +1,8 @@
-p:hover{
+dropdownPara:hover{
     color: navy;
 }
 
-p {
+dropdownPara {
     text-align: center;
     color: #253f3f;
 }
