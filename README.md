@@ -8,15 +8,16 @@ https://hardcore-pare-fec4b4.netlify.com
 
 ## The Ask
 
-###Task
+### Task
 - You will create a single page React app that mimics a Pokedex
 - You will use the Public Pokemon API: https://pokeapi.co
 - Your app may not use React Router or any external tools / libraries we haven't covered in class
 - Your app must break down the app into smaller components AND associate styling CSS files for those smaller components
 
 
-###Features
-####Home
+#### Features
+
+##### Home
 
 
 - Header area with the Title, search bar etc
