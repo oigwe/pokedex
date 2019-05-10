@@ -1,7 +1,8 @@
 .modal{
-    display: flex;
-    flex-wrap: wrap;
+    transform: scale(.70);
 }
+
+
 
 .danger {
   background-color: #8a0000;

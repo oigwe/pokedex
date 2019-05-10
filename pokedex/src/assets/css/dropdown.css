@@ -1,8 +1,11 @@
-dropdownPara:hover{
+.dropdownPara:hover{
     color: navy;
+    cursor: pointer;
+    text-align: center;
 }
 
-dropdownPara {
-    text-align: center;
+.dropdownPara {
     color: #253f3f;
+    cursor: pointer;
+    text-align: center;
 }

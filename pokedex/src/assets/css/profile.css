@@ -4,7 +4,10 @@
 
 .img {
   transform: scale(.75);
+}
 
+.imgS {
+  transform: scale(.5);
 }
 
 .imgB:hover {

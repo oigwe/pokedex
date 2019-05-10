@@ -5,7 +5,7 @@ import '../assets/css/dropdown.css';
 
 const Dropdown = (props) => {
 
-    return <p className="dropdownPara" onClick={props.click}>{props.name}</p>
+    return <p className="dropdownPara pt-1" onClick={props.click}>{props.name}</p>
 
 }
 

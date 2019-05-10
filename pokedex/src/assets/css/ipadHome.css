@@ -1,0 +1,11 @@
+.homeScreenLarge {
+    background-image: url("../photos/ipadScreenStarts.png");
+    background-repeat: no-repeat;
+    width: 100% ;
+}
+
+.homeScreenMed {
+    background-image: url("https://i0.wp.com/c1.staticflickr.com/1/813/40291425534_746d24b8c4_b.jpg");
+    background-repeat: no-repeat;
+    width: 100% ;
+}
