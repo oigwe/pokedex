@@ -6,22 +6,20 @@ import Media from 'react-media';
 import axios from 'axios';
 
 //COMPONENTS
-import Card from '../components/cards';
-import Profile from '../components/profile';
-import Modal from '../components/modal';
-import Footer from '../components/footer';
-import Dropdown from '../components/dropdown';
-import Header from '../components/header';
-import Buttons from '../components/button';
-import SideDrawer from '../components/sideDrawer'
+import Card from './cards';
+import Profile from '../Profile/profile';
+import Modal from '../Profile/modal';
+import Dropdown from '../General/dropdown';
+import Header from '../General/header';
+import LoadMore from './button';
 
 
 //SERVICES
-import Pokelist from '../services/pokelist';
+import Pokelist from '../../services/pokelist';
 
 //CSS
-import '../App.css';
-import '../assets/device/devices.min.css';
+import '../../App.css';
+import '../../assets/device/devices.min.css';
 
 
 class AppHome extends Component {
@@ -40,7 +38,6 @@ class AppHome extends Component {
             load: true,
             inputValue: "",
             windowSize: 0,
-            sideDrawerOpen: false,
         }
     }
 
@@ -59,7 +56,7 @@ class AppHome extends Component {
 
     //LOAD MORE FUNCTIONS
     loadMore = () => {
-        const soundObject = new Audio(require('../assets/pokemon-gotta-catch-em-all-lyrics-_audiotrimmer.com_.mp3'));
+        const soundObject = new Audio(require('../../assets/pokemon-gotta-catch-em-all-lyrics-_audiotrimmer.com_.mp3'));
         soundObject.play();
 
 
@@ -73,7 +70,7 @@ class AppHome extends Component {
 
                 pokeArray.map((e, idx) => {
 
-                    newArr.push({
+                    return newArr.push({
                         name: e.name,
                         icon: `https://img.pokemondb.net/sprites/sun-moon/icon/${e.name}.png`,
                         id: next + idx + 1
@@ -95,7 +92,7 @@ class AppHome extends Component {
 
                 pokeArray.map((e, idx) => {
 
-                    newArr.push({
+                    return newArr.push({
                         name: e.name,
                         icon: `https://img.pokemondb.net/sprites/sun-moon/icon/${e.name}.png`,
                         id: idx + 1
@@ -202,7 +199,6 @@ class AppHome extends Component {
 
 
     render() {
-        console.log("This State", this.state)
         return (<>
             <div className="container-fluid font" style={{
                 backgroundColor: "#2a2a72",
@@ -252,7 +248,7 @@ class AppHome extends Component {
                                                     }) : <Profile pokemonClicked={this.state.pokemonProfile[this.state.pokemonChosenIdx]} showState={this.state.show} modal={this.modal} click={this.linkToHomeScreen} />
                                                     }
                                                     {
-                                                        this.state.view === false ? <Buttons loadMorePoke={this.loadMore} /> : null
+                                                        this.state.view === false ? <LoadMore loadMorePoke={this.loadMore} /> : null
                                                     }
                                                     {
                                                         this.state.modal ? <Modal /> : null
@@ -287,16 +283,13 @@ class AppHome extends Component {
                                                         }) : <Profile pokemonClicked={this.state.pokemonProfile[this.state.pokemonChosenIdx]} showState={this.state.show} sidebar={this.drawerToggleClickHandler} click={this.linkToHomeScreen} />
                                                         }
                                                         {
-                                                            this.state.view === false ? <Buttons loadMorePoke={this.loadMore} /> : null
-                                                        }
-                                                        {
-                                                            this.state.sideDrawerOpen === true ? <SideDrawer click={this.drawerToggleClickHandler} show={this.state.sideDrawerOpen}/> : null
+                                                            this.state.view === false ? <LoadMore loadMorePoke={this.loadMore} /> : null
                                                         }
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="home">
-                                               <Link to='/'> <button style={{ height: "100%", width: "100%", backgroundColor: "transparent", borderRadius: "50%" }}>
+                                                <Link to='/'> <button style={{ height: "100%", width: "100%", backgroundColor: "transparent", borderRadius: "50%" }}>
                                                 </button> </Link>
                                             </div>
                                         </div>
@@ -307,7 +300,6 @@ class AppHome extends Component {
                     <div className="row py-5"> </div>
                 </div>
             </div>
-            <Footer />
         </>
         )
     }

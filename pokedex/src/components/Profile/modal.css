@@ -1,11 +1,9 @@
-.modal{
-    transform: scale(.70);
-}
-
-
-
 .danger {
   background-color: #8a0000;
+}
+
+.modal{
+    transform: scale(.70);
 }
 
 .profile{

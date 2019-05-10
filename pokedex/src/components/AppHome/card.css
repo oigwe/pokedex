@@ -4,16 +4,16 @@
     font-family: "Share Tech Mono";
 }
 
-.holder {
-    display: flex;
-}
-
 .card:hover {
     background-color: rgba(0, 153, 255, 0.829);
     transform: scale(1.1);
     font-size: x-large;
     color: white;
     cursor: url("https://66.media.tumblr.com/a9665193a9dc405a254a2d304cf6d70b/tumblr_inline_oikiwdz3Vg1qa3mpb_100.gif"), auto;
+}
+
+.holder {
+    display: flex;
 }
 
 

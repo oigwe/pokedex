@@ -1,11 +1,16 @@
-import './App.css';
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
-// ---- Pages
-import IpadHome from'./components/ipadHome'
-import AppHome from './components/appHome'
-import Error404 from './components/error404';
+// COMPONENTS
+import IpadHome from'./components/DeviceHomeScreen/IpadHome'
+import AppHome from './components/AppHome/appHome'
+import Error404 from './components/General/error404';
+import Footer from './components/General/footer';
+
+
+//CSS
+import './App.css';
+
 
 
 
@@ -30,6 +35,7 @@ class App extends Component {
               <Route path='/' exact component={IpadHome} />
               <Route component={Error404}/>
             </Switch>
+            <Footer/>
       </HashRouter>
     );
   }

@@ -1,12 +1,17 @@
 import React from 'react';
 import Media from 'react-media';
+import { UncontrolledTooltip } from 'reactstrap'
 
 
-import '../assets/css/profile.css';
+//CSS
+import './profile.css';
+
+//COMPONENTS
 import ModalExample from './modal';
 import HomeButton from './homeButton';
-import tags from '../services/tags'
-import { UncontrolledTooltip } from 'reactstrap'
+
+//SERVICES
+import tags from '../../services/tags'
 
 
 

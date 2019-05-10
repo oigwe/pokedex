@@ -1,6 +1,8 @@
 import React from 'react';
 import Media from 'react-media';
-import '../assets/css/header.css';
+
+//CSS
+import './header.css';
 
 const Header = (props) => {
     return ( <div className="headerBackground">
@@ -45,6 +47,3 @@ const Header = (props) => {
         
         export default Header;
         
-/*<div className="pokeball pokeball_right">
-            <div className="pokeball__button"></div>
-        </div>*/

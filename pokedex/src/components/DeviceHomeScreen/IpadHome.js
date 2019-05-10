@@ -4,19 +4,13 @@ import Media from 'react-media';
 
 
 //COMPONENTS
-import Card from '../components/cards';
-import Profile from '../components/profile';
-import Modal from '../components/modal';
-import Footer from '../components/footer';
-import Dropdown from '../components/dropdown';
-import Header from '../components/header';
-import Buttons from '../components/button';
+
 
 
 //CSS
-import '../App.css';
-import '../assets/device/devices.min.css';
-import '../assets/css/ipadHome.css'
+import '../../App.css';
+import '../../assets/device/devices.min.css';
+import './IpadHome.css'
 
 
 class IpadHome extends Component {
@@ -27,13 +21,6 @@ class IpadHome extends Component {
             appClicked: false,
         }
     }
-
-
-
-    //EVENT HANDLERS
-
-
-    //LIFECYCLCES
 
 
 
@@ -75,7 +62,7 @@ class IpadHome extends Component {
                                                             backgroundColor: "#a40606",
                                                             backgroundImage: "linear-gradient(315deg, #a40606 0%, #d98324 74%)",
                                                             color: "white", height: "75px", width: "80px", borderRadius: "20px", marginLeft: "26px", fontSize: "40px"
-                                                        }}><Link to="/pokedex"><img src="https://www.pngarts.com/files/4/Pokeball-Transparent.png" style={{ width: "80%" }} /></Link></button>
+                                                        }}><Link to="/pokedex"><img src="https://www.pngarts.com/files/4/Pokeball-Transparent.png" style={{ width: "80%" }} alt="Pokedex App Button" /></Link></button>
                                                         <p style={{ paddingLeft: "40px", paddingTop: "10px", fontFamily: "sans-serif", fontSize: "13px", color: "white" }}>Pokedex</p>
                                                     </div>
                                                 </div>
@@ -95,7 +82,7 @@ class IpadHome extends Component {
                                                                 backgroundColor: "#42378f",
                                                                 backgroundImage: "linear-gradient(315deg, #42378f 0%, #f53844 74%)",
                                                                 color: "white", height: "75px", width: "80px", borderRadius: "20px", marginLeft: "26px", fontSize: "40px"
-                                                            }}><Link to="/pokedex"><img src="https://www.pngarts.com/files/4/Pokeball-Transparent.png" style={{ width: "80%" }} /></Link></button>
+                                                            }}><Link to="/pokedex"><img src="https://www.pngarts.com/files/4/Pokeball-Transparent.png" style={{ width: "80%" }} alt="Pokedex App Button" /></Link></button>
                                                             <p style={{ paddingLeft: "40px", paddingTop: "7px", fontFamily: "sans-serif", fontSize: "13px", color: "white" }}>Pokedex</p>
                                                         </div>
 
@@ -114,24 +101,9 @@ class IpadHome extends Component {
                     <div className="row py-5"> </div>
                 </div>
             </div>
-            <Footer />
         </>
         )
     }
 }
 
 export default IpadHome;
-
-/*<div className="container-fluid" style={{ backgroundImage: "url('https://live.staticflickr.com/5093/5521664137_0ed41fccc7_b.jpg')", backgroundRepeat: "no-repeat", width: "200%" }}>
-<div className="row">
-    <div className="col-3"></div>
-    <div className="col-2">
-        <button style={{
-            backgroundColor: "#42378f",
-            backgroundImage: "linear-gradient(315deg, #42378f 0%, #f53844 74%)",
-            color: "white", height: "75px", width: "80px", borderRadius: "20px", marginLeft: "10px", fontSize: "40px"
-        }}><Link to="/pokedex"><img src="https://www.pngarts.com/files/4/Pokeball-Transparent.png" style={{ width: "80%" }} /></Link></button>
-    </div>
-
-</div>
-</div>*/
