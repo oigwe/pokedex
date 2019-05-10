@@ -20,6 +20,7 @@ https://hardcore-pare-fec4b4.netlify.com
 ##### Home
 
 ![alt-text](pokedex/src/assets/photos/TaskGoal1.png | width=250)
+<img src="pokedex/src/assets/photos/TaskGoal1.png" width="250">
 
 - Header area with the Title, search bar etc
 - Home will display master list of Pokemon:
