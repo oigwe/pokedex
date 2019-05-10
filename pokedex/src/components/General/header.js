@@ -5,7 +5,7 @@ import Media from 'react-media';
 import './header.css';
 
 const Header = (props) => {
-    return ( <div className="headerBackground">
+    return (<div className="headerBackground">
         <Media query={{ maxWidth: 1148 }}>
             {matches =>
                 matches ? (<>
@@ -13,7 +13,7 @@ const Header = (props) => {
                     <div className="row dark">
                         <div className="col"></div>
                         <div className="col">
-                            <h1 onClick={props.click} style={{textAlign: "center", fontSize: "35px"}}>PursuitPokedex</h1>
+                            <h1 onClick={props.click} style={{ textAlign: "center", fontSize: "35px" }}>PursuitPokedex</h1>
                             <input type="text" className="form-control w100" aria-label="Default" aria-describedby="inputGroup-sizing-default" value={props.inputValue} onChange={props.onChange} />
                         </div>
                         <div className="col"></div>
@@ -30,7 +30,7 @@ const Header = (props) => {
 
                         </div>
                         <div className="col">
-                            <h1 onClick={props.click}>PursuitPokedex</h1>
+                            <h1 onClick={props.click} style={{ textAlign: "center", fontSize: "35px" }}>PursuitPokedex</h1>
                             <input type="text" className="form-control w100" aria-label="Default" aria-describedby="inputGroup-sizing-default" value={props.inputValue} onChange={props.onChange} />
                         </div>
                         <div className="col">
@@ -39,11 +39,10 @@ const Header = (props) => {
                     </div>
                 </>)
             }
-            </Media>
-        </div>
+        </Media>
+    </div>
     )
-        }
-        
-        
-        export default Header;
-        
+}
+
+
+export default Header;
