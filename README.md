@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/854677de-8d9c-46aa-a99f-f60a0fbc2f13/deploy-status)](https://app.netlify.com/sites/hardcore-pare-fec4b4/deploys)
+
 # pokeDex
 
 ## Project Results: Live Page
