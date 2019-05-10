@@ -19,7 +19,7 @@ https://hardcore-pare-fec4b4.netlify.com
 
 ##### Home
 
-<img src="pokedex/src/assets/photos/TaskGoal1.png" width="500">
+<img src="pokedex/src/assets/photos/TaskGoal1.png" width="400">
 
 - Header area with the Title, search bar etc
 - Home will display master list of Pokemon:
@@ -39,49 +39,55 @@ https://hardcore-pare-fec4b4.netlify.com
   - If you want to go above and beyond but not needed for this lab:
     - You may implement infinite scroll loading like in Instagram
     - You may need the following information:
+```javascript
 onScroll Event
 window.innerHeight 
 window.scrollY
 document.body.scrollTop
-Home - Search Active
+```
+#### Home - Search Active
 
+<img src="pokedex/src/assets/photos/TaskGoal2.png" width="400">
 
-As a User types in the search bar, you will give suggestions below the input field.
-The suggestions will use the pkmn-list.js data. Which you will store locally. Please do not send an API request for this information.
-This is very similiar to the Spotify Playlist Search Lab
-Hovering over each name of the Pokemon should have a hover effect
-Clicking on the Pokemon name should take you to that Pokemon's page
-This search functionality needs to work on any page. HOME and PROFILE
-Selected Pokemon's Profile Page
+- As a User types in the search bar, you will give suggestions below the input field.
+- The suggestions will use the pkmn-list.js data. Which you will store locally. Please do not send an API request for this - information.
+- This is very similiar to the Spotify Playlist Search Lab
+- Hovering over each name of the Pokemon should have a hover effect
+- Clicking on the Pokemon name should take you to that Pokemon's page
+- This search functionality needs to work on any page. HOME and PROFILE
 
+#### Selected Pokemon's Profile Page
 
-API: https://pokeapi.co/api/v2/pokemon/{pokemon-name}
-Eg: https://pokeapi.co/api/v2/pokemon/bulbasaur
-That API will return all the data that you need on this page
-You will get the large Pokemon artwork from:
-https://img.pokemondb.net/artwork/bulbasaur.jpg
-Clicking on the Home >> link should return you to the Home Page.
-You will need to create a Type Component similar to the Tag Component in our Trello Board App.
-This component will always have a particular backgroundColor for the particular type.
-You will be doing something like the following:
-<Type name='Grass' /> <Type name='Poison' />
-We will leave you to find the colors for all the types LOL
-There are a total of 18 types
-https://bulbapedia.bulbagarden.net/wiki/Type
-Clicking on the individual moves will open up the Active Move component
-Active Move on Pokemon's Profile
+<img src="pokedex/src/assets/photos/TaskGoal3.png" width="400">
 
+- API: https://pokeapi.co/api/v2/pokemon/{pokemon-name}
+  - Eg: https://pokeapi.co/api/v2/pokemon/bulbasaur
+- That API will return all the data that you need on this page
+- You will get the large Pokemon artwork from:
+  - https://img.pokemondb.net/artwork/bulbasaur.jpg
+- Clicking on the Home >> link should return you to the Home Page.
+- You will need to create a Type Component similar to the Tag Component in our Trello Board App.
+  - This component will always have a particular backgroundColor for the particular type.
+  - You will be doing something like the following:
+    - <Type name='Grass' /> <Type name='Poison' />
+  - We will leave you to find the colors for all the types LOL
+  - There are a total of 18 types
+    - https://bulbapedia.bulbagarden.net/wiki/Type
+  - Clicking on the individual moves will open up the Active Move component
+ 
+#### Active Move on Pokemon's Profile
 
-API: https://pokeapi.co/api/v2/move/{move-name}/
-Eg: https://pokeapi.co/api/v2/move/razor-wind/
-Clicking on an individual move should open up this box / modal centered on the page with a close button.
-This box will display the following data from the API:
-NAME
-Type
-Power
-PP
-This mode should darken the rest of the page
-Clicking the close should return User to the regular profile
-## Example Goal (provided by teaching staff):
-![final](spotify_playlist_final.png)
+<img src="pokedex/src/assets/photos/TaskGoal4.png" width="400">
+
+- API: https://pokeapi.co/api/v2/move/{move-name}/
+  - Eg: https://pokeapi.co/api/v2/move/razor-wind/
+- Clicking on an individual move should open up this box / modal centered on the page with a close button.
+- This box will display the following data from the API:
+  - Name
+  - Type
+  - Power
+  - PP
+- This mode should darken the rest of the page
+- Clicking the close should return User to the regular profile
+
 
