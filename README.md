@@ -6,7 +6,7 @@
 https://hardcore-pare-fec4b4.netlify.com
 
 ## Project Results: Preview
-![alt-text](playlistDemoVid.gif)
+![alt-text](pokedex/src/assets/videos/pokedexScreenCapture.gif)
 
 ## The Ask
 
