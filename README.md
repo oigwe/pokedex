@@ -1,9 +1,9 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/854677de-8d9c-46aa-a99f-f60a0fbc2f13/deploy-status)](https://app.netlify.com/sites/hardcore-pare-fec4b4/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e35ad6f7-1fd6-4825-a595-b6699c5769b8/deploy-status)](https://app.netlify.com/sites/friendly-ramanujan-f883ea/deploys)
 
 # pokeDex
 
 ## Project Results: Live Page
-https://hardcore-pare-fec4b4.netlify.com
+https://friendly-ramanujan-f883ea.netlify.com
 
 ## Project Results: Preview
 ![alt-text](pokedex/src/assets/videos/pokedexScreenCapture.gif)
