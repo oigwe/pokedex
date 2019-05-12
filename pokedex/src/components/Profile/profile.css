@@ -7,7 +7,7 @@
 }
 
 .imgS {
-  transform: scale(.5);
+  width: 95%;
 }
 
 .imgB:hover {

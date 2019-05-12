@@ -36,7 +36,7 @@ const Profile = (props) => {
             </div>
             <div className="container">
                 <div className="row">
-                    <img src={props.pokemonClicked.profilePic} alt="Bulbasaur" className="imgS" />
+                <img src={props.pokemonClicked.profilePic} alt={props.pokemonClicked.name} className="imgS" />
                 <div className="row d-flex flex wrap mr-3">
                             {props.pokemonClicked.sprites.map((e, i) => {
                                 return e.url !== 'null' ? <div className="col-4" key={i}>
